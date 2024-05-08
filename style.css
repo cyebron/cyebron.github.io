@@ -1,43 +1,16 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.myPortfolio {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 3em;
+  padding-top: 5em;
+  font-weight: 900;
 }
 
-h2 {
-  color: goldenrod;
-  font-size: 24px;
-  font-family: sans-serif;
-  text-transform:uppercase;
-  font-style:  italic;
-
-}
-
-h3 {
-  color:wheat ;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-.main-header {
-  background-color: #F5F5F5 ;
-}
-
-footer {
-  font-size: 10px;
-}
-
-aside {
- background-color: #F5F5F5;
- border-top: 5px solid goldenrod;
- border-bottom: 5px solid goldenrod;
-}
-
-.container {
-  height: auto;
+.backgroundImg {
   background-image: url(img/background.jpg);
+  height: 100vh;
+  background-position: center;
   background-size: cover;
-}
-
-nav {
-  background-color: aqua;
+  padding: 0;
 }
