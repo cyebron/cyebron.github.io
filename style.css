@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  color: goldenrod;
+  font-size: 24px;
+  font-family: sans-serif;
+  text-transform:uppercase;
+  font-style:  italic;
+
+}
+
+h3 {
+  color:wheat ;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.main-header {
+  background-color: #F5F5F5 ;
+}
+
+footer {
+  font-size: 10px;
+}
+
+aside {
+ background-color: #F5F5F5;
+ border-top: 5px solid goldenrod;
+ border-bottom: 5px solid goldenrod;
+}
+
+.container {
+  height: auto;
+  background-image: url(img/background.jpg);
+  background-size: cover;
+}
+
+nav {
+  background-color: aqua;
+}
