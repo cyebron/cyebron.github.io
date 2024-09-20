@@ -92,25 +92,39 @@
 
      <!-- JavaScript for Search Functionality -->
      <script>
-      // search function
-      function searchContent() {
-          var searchQuery = document.getElementById('search-input').value.toLowerCase();
-          
-          // Sections to search through
-          var sections = {
-              'projects': '#projects',
-              'skills': '#skills',
-              'contact': '#contact',
-              'hero': '#hero'
-          };
+        
+    function searchContent() {
+            var searchQuery = document.getElementById('search-input').value.toLowerCase();
 
-          // Redirect to the matching section
-          if (sections[searchQuery]) {
-              window.location.href = sections[searchQuery];
-          } else {
-              alert("No matching content found! Try 'projects', 'skills', or 'contact'.");
-          }
-      }
+            // Get all elements that contain text
+            var allElements = document.querySelectorAll('body *');
+
+            let found = false;
+
+            // Loop through elements and check if any contain the search query
+            for (let element of allElements) {
+                let textContent = element.textContent || element.innerText;
+                if (textContent.toLowerCase().includes(searchQuery)) {
+                    // Scroll to the element and highlight it
+                    element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    element.style.backgroundColor = 'yellow'; // Highlight the element
+                    found = true;
+                    break;
+                }
+            }
+
+            if (!found) {
+                alert("No matching content found!");
+            }
+        }
+
+    // Trigger search on 'Enter' key press
+    function checkEnter(event) {
+        if (event.key === 'Enter') {
+            event.preventDefault(); // Prevents form submission if inside a form
+            searchContent();
+        }
+    }
   </script>
 </body>
 </html>
