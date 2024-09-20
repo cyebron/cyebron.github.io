@@ -1,64 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Testing Paradigm</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyril Anthony | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- import icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    
 </head>
 <body>
-  <!-- navigation -->
-  <header>
-    <h2>Beyond the Code: System Testing Strategies</h2>
-  <nav>
-    <a href="https://www.facebook.com/" target="_blank">Facebook login</a>
-    <a href="https://www.linkedin.com/login" target="_blank">LinkedIn login</a>
-    <a href="https://github.com/login" target="_blank">Github</a>
-       </nav>
-  </header>
-
-  <!-- article -->
-  <article>
-    <!-- header -->
+    <!-- Navigation Bar -->
     <header>
-      <h3>System Testing Mastery: Strategies for Success</h3>
-      <img src="img/cy-profile.jpg" alt="Profile of Cy Anthony" height="100" width="100">
-      <a href="blog.html" target="_blank">Click here!</a>
-      <p>Posted by: <b>Cy Anthony Ebron</b> on June 13th, 2024</p>
-      <img src="img/banner.png" alt="Banner of Cy Anthony" height="150" width="500">
+        <nav>
+            <ul>
+                <li><a href="#projects"><i class="bi bi-menu-app"></i> Projects</a></li>
+                <li><a href="#skills"><i class="bi bi-mortarboard"></i> Skills</a></li>
+                <li><a href="#contact"><i class="bi bi-file-person"></i> Contact</a></li>
+                
+                 <!-- Search Box -->
+                 <li id="search-box" class="search-box">
+                  <input type="text" id="search-input" placeholder="Search content...">
+                  <button onclick="searchContent()">  <i class="bi bi-search"></i> Search</button>
+              </li>
+            </ul>
+       
+        </nav>
     </header>
-    <!-- content -->
-    <p>Responsive web design is a crucial aspect of modern web development, ensuring that websites 
-      look and function seamlessly across a wide range of devices and screen sizes. In this guide, 
-      we'll explore the principles and techniques behind building responsive real-world websites, 
-      equipping you with the knowledge and skills to create compelling online experiences for users on desktops, 
-      laptops, tablets, and smartphones.</p>
-      <ul>
-        <li>Define responsive web design</li>
-        <li>Importance of responsiveness in today's digital landscape</li>
-        <li>Overview of the content to be covered</li>
-      </ul>
-  </article>
 
-  <aside>
-    <p><b>Related posts</b></p>
-    <ul>
-      <li>
-        <img src="img/web-development.png" alt="Learn web development image" height="75" width="75">
-        <a href="https://web.dev/learn" target="_blank">Learn web development</a>
-        <p>By: Chrome DevRel team</p>
-      </li>
-      <li>
-        <img src="img/css-logo.png" alt="CSS image" height="75" width="75">
-        <a href="https://medium.com/codex/the-hidden-powers-of-css-5f73111633f8" target="_blank">The hidden power of CSS</a>
-        <p>By: Mina Pêcheux</p>
-      </li>
-      <li>
-        <img src="img/javascript-logo.png" alt="Javascript image" height="75" width="75">
-        <a href="https://snipcart.com/blog/why-javascript-benefits" target="_blank">Reasons Why JavaScript is Omnipresent in Modern Development</a>
-        <p>By: Mathieu Dionne</p>
-      </li>
-    </ul>
-  </aside>
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="intro">
+            <h1>Cyril Anthony</h1>
+            <p>A Web Application Developer - Full Stack</p>
+        </div>
+    </section>
 
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <!-- Project Cards -->
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>Brief description of the project.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>Brief description of the project.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Vue.js</li>
+            <li>Node.js</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/cyril-anthony-ebron-9bb532244/" target="_blank"><i class="bi bi-linkedin"></i>LinkedIn</a>
+            <a href="https://github.com/cyebron" target="_blank"><i class="bi bi-github"></i>GitHub</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Cyril Anthony</p>
+    </footer>
+
+     <!-- JavaScript for Search Functionality -->
+     <script>
+      // search function
+      function searchContent() {
+          var searchQuery = document.getElementById('search-input').value.toLowerCase();
+          
+          // Sections to search through
+          var sections = {
+              'projects': '#projects',
+              'skills': '#skills',
+              'contact': '#contact',
+              'hero': '#hero'
+          };
+
+          // Redirect to the matching section
+          if (sections[searchQuery]) {
+              window.location.href = sections[searchQuery];
+          } else {
+              alert("No matching content found! Try 'projects', 'skills', or 'contact'.");
+          }
+      }
+  </script>
 </body>
 </html>
