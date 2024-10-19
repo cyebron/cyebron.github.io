@@ -1,0 +1,237 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fdfdfd; /* Off-White */
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1.5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navigation Bar */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffcc0e; /* Off-Yellow */
+  padding: 1rem 2rem;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 1.5rem;
+}
+
+nav ul li a {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #555;
+}
+
+/* Hero Section */
+#hero {
+  height: 100vh;
+  background: linear-gradient(to top, #333, #ffcc0e); /* Gradient from dark to off-yellow */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff; /* Light text for contrast against dark background */
+  padding: 0 2rem;
+  transition: all 0.3s ease; /* Smooth transitions for any changes */
+}
+
+
+#hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+#hero p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+/* Projects Section */
+#projects {
+  padding: 4rem 2rem;
+  background-color: #fdfdfd; /* Off-White */
+}
+
+#projects h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.project-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #eaeaea;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex-basis: 45%;
+  text-align: center;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Skills Section */
+#skills {
+  padding: 4rem 2rem;
+  background-color: #ffcc0e; /* Off-Yellow */
+}
+
+#skills h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+#skills ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+/* Contact Section */
+#contact {
+  padding: 4rem 2rem;
+  background-color: #fdfdfd; /* Off-White */
+}
+
+#contact h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #eaeaea;
+}
+
+label, input, textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+input, textarea {
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+/* Search Box Styling */
+.search-box {
+  display: flex;
+  align-items: center;
+  margin-left: 20px; /* Optional: Adjust the distance from menu items */
+}
+
+#search-input {
+  width: 200px;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+#search-input:focus {
+  border-color: #ffcc0e; /* Off-yellow focus */
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-left: 10px; /* Space between the input and button */
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffcc0e;
+}
+
+/* Social Links */
+.social-links {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.social-links a {
+  margin: 0 1.5rem;
+  font-size: 1.2rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #555;
+}
+
+/* Footer */
+footer {
+  background-color: #ffcc0e; /* Off-Yellow */
+  color: #333;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 4rem;
+}
