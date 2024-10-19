@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cy|Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/1a0baad43d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/javascript-logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web app developer</p>
+                <h1>Hi, I'm <span>Cy Anthony</span> <br>from Calbiga W. Samar</h1>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/profile.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>samina-mina eh-eh waka-waka eh-ehsamina-mina eh-eh 
+                        waka-waka eh-ehsamina-mina eh-eh waka-waka eh-eh
+                        samina-mina eh-eh waka-waka eh-ehsamina-mina eh-eh 
+                        waka-waka eh-ehsamina-mina eh-eh waka-waka eh-eh
+                        samina-mina eh-eh waka-waka 
+                        eh-ehsamina-mina eh-eh waka-waka eh-eh</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                            <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                            <p class="tab-links" onclick="openTab('education')">Education</p>
+                        </div>
+                        <!-- skills content -->
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Design Web/App Interfaces</li>
+                                <li><span>Web Development</span><br>Web application development</li>
+                                <li><span>App Development</span><br>Building android/iOS applications</li>
+                            </ul>
+                        </div>
+                        <!-- experience content -->
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2021 - Present</span><br>Web App Developer at Southern Convergence</li>
+                                <li><span>2020 - 2021</span><br>IT Sevices Support Specialist</li>
+                            </ul>
+                        </div>
+                        <!-- education content -->
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2019</span><br>Samar State University</li>
+                                <li><span>2014</span><br>Calbiga National High School</li>
+                                <li><span>2010</span><br>Calbiga Central Elementary School</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>samina-mina eh-eh waka-waka eh-ehsamina-mina eh-eh 
+                        waka-waka eh-ehsamina-mina eh-eh waka-waka 
+                        waka-waka eh-ehsamina-mina eh-eh waka-waka eh-eh
+                        samina-mina eh-eh waka-waka</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>samina-mina eh-eh waka-waka eh-ehsamina-mina eh-eh 
+                        waka-waka eh-ehsamina-mina eh-eh waka-waka 
+                        waka-waka eh-ehsamina-mina eh-eh waka-waka eh-eh
+                        samina-mina eh-eh waka-waka</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>samina-mina eh-eh waka-waka eh-ehsamina-mina eh-eh 
+                        waka-waka eh-ehsamina-mina eh-eh waka-waka 
+                        waka-waka eh-ehsamina-mina eh-eh waka-waka eh-eh
+                        samina-mina eh-eh waka-waka</p>
+                        <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!-- portffolio -->
+      <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/css-logo.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>samina-mina eh-eh waka-waka eh-ehsamina-mina eh-eh 
+                            waka-waka eh-ehsamina-mina eh-eh waka-waka 
+                            samina-mina eh-eh waka-waka</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/css-logo.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>samina-mina eh-eh waka-waka eh-ehsamina-mina eh-eh 
+                            waka-waka eh-ehsamina-mina eh-eh waka-waka 
+                            samina-mina eh-eh waka-waka</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/css-logo.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>samina-mina eh-eh waka-waka eh-ehsamina-mina eh-eh 
+                            waka-waka eh-ehsamina-mina eh-eh waka-waka 
+                            samina-mina eh-eh waka-waka</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- See more -->
+             <a href="#" class="btn"> See more</a>
+        </div>
+      </div>
+      <!-- contact -->
+       <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> cyanthony.work@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 09268017116</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkin"></i></a>
+                    </div>
+                    <a href="/cv-file/portfolio.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+            <div class="copyright">
+                <p>Copyright Cy Anthony | Website Portfolio</p>
+            </div>
+       </div>
+
+
+<script>
+        var tabLinks = document.getElementsByClassName("tab-links");
+        var tabContents = document.getElementsByClassName("tab-contents");
+    
+        function openTab(tabname){
+            for (tabLink of tabLinks) {
+                tabLink.classList.remove("active-link") 
+            }
+            for (tabContent of tabContents) {
+                tabContent.classList.remove("active-tab") 
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openMenu() {
+        sidemenu.style.right = "0";
+    }
+    function closeMenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxKCLZn827cEX5U7tToweWbj9tAP3B8B4_3SKUV-vzEQDLjEVY0r-sFjMZJVKVSm9o3/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+
+
+</html>
