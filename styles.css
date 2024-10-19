@@ -26,6 +26,7 @@ nav{
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  z-index: 1000;
 }
 .logo{
   width: 80px;
@@ -282,6 +283,7 @@ nav ul li a:hover::after{
   display: inline-block;
   background: #ff004f;
   border-radius: 6px;
+  cursor: pointer;
 }
 .contact-right form{
   width: 100%;
