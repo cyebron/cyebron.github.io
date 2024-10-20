@@ -1,16 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cy | Web Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cy|Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/1a0baad43d.js" crossorigin="anonymous"></script>
 </head>
 <body>
- <div class="backgroundImg">
-  <p class="myPortfolio">My Portfolio</p>
- </div>
- <footer></footer>
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/cy-logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web app developer</p>
+                <h1>Hi, I'm <span>Cy Anthony</span> <br>from Calbiga W. Samar</h1>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/profile.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>samina-mina eh-eh waka-waka eh-ehsamina-mina eh-eh 
+                        waka-waka eh-ehsamina-mina eh-eh waka-waka eh-eh
+                        samina-mina eh-eh waka-waka eh-ehsamina-mina eh-eh 
+                        waka-waka eh-ehsamina-mina eh-eh waka-waka eh-eh
+                        samina-mina eh-eh waka-waka 
+                        eh-ehsamina-mina eh-eh waka-waka eh-eh</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                            <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                            <p class="tab-links" onclick="openTab('education')">Education</p>
+                        </div>
+                        <!-- skills content -->
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Design Web/App Interfaces</li>
+                                <li><span>Web Development</span><br>Web application development</li>
+                                <li><span>App Development</span><br>Building android/iOS applications</li>
+                            </ul>
+                        </div>
+                        <!-- experience content -->
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2021 - Present</span><br>Web App Developer at Southern Convergence</li>
+                                <li><span>2020 - 2021</span><br>IT Sevices Support Specialist</li>
+                            </ul>
+                        </div>
+                        <!-- education content -->
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2019</span><br>Samar State University</li>
+                                <li><span>2014</span><br>Calbiga National High School</li>
+                                <li><span>2010</span><br>Calbiga Central Elementary School</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>I specialize in creating custom web applications 
+                        that are fast, secure, and easy to use. 
+                        Whether you need a simple tool or a fully 
+                        scalable solution, I work closely with you 
+                        to build an app that fits your unique needs. 
+                        With a focus on seamless functionality and 
+                        user-friendly design, I deliver reliable web 
+                        applications that help you manage tasks, 
+                        collaborate, and grow your business effortlessly. 
+                        Let me help bring your ideas to life with 
+                        personalized, professional service.</p>
+                        <a href="https://www.google.com/search?q=what+is+web+development+as+a+service&rlz=1C1CHBF_enPH1051PH1051&oq=what+is+web+development+as+a+service&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yCAgCEAAYFhgeMgoIAxAAGA8YFhgeMg0IBBAAGIYDGIAEGIoFMg0IBRAAGIYDGIAEGIoFMg0IBhAAGIYDGIAEGIoFMgoIBxAAGIAEGKIEMgoICBAAGIAEGKIEMgoICRAAGIAEGKIE0gEHNjQ1ajBqOagCALACAQ&sourceid=chrome&ie=UTF-8" target="_blank">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <h2>Mobile App Development</h2>
+                    <p>Mobile Application Development services designed to 
+                        help businesses create custom mobile applications that 
+                        meet their specific needs. I work closely with clients 
+                        to understand their goals and requirements, ensuring that 
+                        the applications are user-friendly, functional, and scalable. 
+                        My approach includes designing intuitive interfaces and developing 
+                        robust backend systems to provide seamless performance across 
+                        different devices.</p>
+                        <a href="https://www.google.com/search?q=what+is+mobile+app+development+as+a+service&rlz=1C1CHBF_enPH1051PH1051&oq=what+is+mobile+app++development+as+a+service&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIKCAEQABiABBiiBDIKCAIQABiABBiiBDIKCAMQABiABBiiBDIKCAQQABiABBiiBNIBCDg0MjlqMGo5qAIAsAIB&sourceid=chrome&ie=UTF-8" target="_blank">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-pen-nib"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I offer professional UI/UX design services that 
+                        focus on creating intuitive, visually appealing, 
+                        and user-friendly interfaces. By understanding 
+                        your business goals and your users' needs, I 
+                        design seamless digital experiences that are both 
+                        functional and beautiful. Whether you need a 
+                        fresh design or a complete revamp, I ensure every 
+                        element enhances usability and engages your 
+                        audience. Let me help you create designs that not 
+                        only look great but also provide a smooth, 
+                        enjoyable user experience.</p>
+                        <a href="https://www.google.com/search?q=what+is+ui%2Fux+as+a+service&sca_esv=ce985a1e0c81157c&rlz=1C1CHBF_enPH1051PH1051&ei=n3wUZ4eoHJDm2roPgf7q0Qo&ved=0ahUKEwjH8-DUhZyJAxUQs1YBHQG_OqoQ4dUDCA8&uact=5&oq=what+is+ui%2Fux+as+a+service&gs_lp=Egxnd3Mtd2l6LXNlcnAiGndoYXQgaXMgdWkvdXggYXMgYSBzZXJ2aWNlMggQIRigARjDBEjWNVDrGliRM3ABeAGQAQCYAYUBoAHiA6oBAzQuMbgBA8gBAPgBAZgCBqACgQTCAgoQABiwAxjWBBhHwgIEEAAYHsICCxAAGIAEGIYDGIoFwgIIEAAYgAQYogTCAgoQIRigARjDBBgKmAMAiAYBkAYIkgcDNC4yoAfcEw&sclient=gws-wiz-serp" target="_blank">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-headset"></i>
+                    <h2>IT Support and Tech Consulting</h2>
+                    <p>I offer IT Support and Tech Consulting services designed to 
+                        help businesses optimize their technology infrastructure. 
+                        My services include providing troubleshooting assistance 
+                        for hardware, software, and network issues, ensuring 
+                        smooth operations and minimizing downtime. I assist 
+                        organizations in integrating new technologies with their 
+                        existing systems to enhance workflow and efficiency.</p>
+                        <a href="https://www.google.com/search?q=what+is+IT+support+and+tech+consulting+as+a+service&rlz=1C1CHBF_enPH1051PH1051&oq=what+is+IT+support+and+tech+consulting+as+a+service&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRigATIHCAMQIRigAdIBBzgwNmowajmoAgCwAgE&sourceid=chrome&ie=UTF-8" target="_blank">Learn more</a>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!-- portfolio -->
+      <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/css-logo.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>samina-mina eh-eh waka-waka eh-ehsamina-mina eh-eh 
+                            waka-waka eh-ehsamina-mina eh-eh waka-waka 
+                            samina-mina eh-eh waka-waka</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/css-logo.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>samina-mina eh-eh waka-waka eh-ehsamina-mina eh-eh 
+                            waka-waka eh-ehsamina-mina eh-eh waka-waka 
+                            samina-mina eh-eh waka-waka</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/css-logo.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>samina-mina eh-eh waka-waka eh-ehsamina-mina eh-eh 
+                            waka-waka eh-ehsamina-mina eh-eh waka-waka 
+                            samina-mina eh-eh waka-waka</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- See more -->
+             <a href="#" class="btn"> See more</a>
+        </div>
+      </div>
+      <!-- contact -->
+       <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> cyanthony.work@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 09268017116</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkin"></i></a>
+                    </div>
+                    <a href="/cv-file/portfolio.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+            <div class="copyright">
+                <p>Copyright Cy Anthony | Website Portfolio</p>
+            </div>
+       </div>
+
+
+<script>
+        var tabLinks = document.getElementsByClassName("tab-links");
+        var tabContents = document.getElementsByClassName("tab-contents");
+    
+        function openTab(tabname){
+            for (tabLink of tabLinks) {
+                tabLink.classList.remove("active-link") 
+            }
+            for (tabContent of tabContents) {
+                tabContent.classList.remove("active-tab") 
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openMenu() {
+        sidemenu.style.right = "0";
+    }
+    function closeMenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxKCLZn827cEX5U7tToweWbj9tAP3B8B4_3SKUV-vzEQDLjEVY0r-sFjMZJVKVSm9o3/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
   
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
 </body>
+
+
 </html>
