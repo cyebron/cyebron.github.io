@@ -8,13 +8,13 @@ html{
   scroll-behavior: smooth;
 }
 body{
-  background: #3e3c3c;
+  background: #111010;
   color: white;
 }
 #header{
   width: 100%;
   height: 100vh;
-  /* background-image: url(images/background.png); */
+  background-image: url(images/background.png);
   background-size: cover;
   background-position: center;
 }
@@ -29,7 +29,7 @@ nav{
   z-index: 1000;
 }
 .logo{
-  width: 80px;
+  width: 120px;
 }
 nav ul li{
   display: inline-block;
@@ -82,7 +82,7 @@ nav ul li a:hover::after{
 .about-col-1 img{
   width: 100%;
   border-radius: 50%;
-  opacity: 70%;
+  opacity: 75%;
 }
 .about-col-2{
   flex-basis: 60%;
@@ -323,10 +323,10 @@ nav .fa-solid{
 @media only screen and (max-width: 600px){
   /* change this image to mobile size */
   #header{
-    /* background-image: url(images/background.png); */
+    background-image: url(images/mobile-background.png);
   }
   .header-text{
-    margin-top: 70%;
+    margin-top: 50%;
     font-size: 14px;
   }
   .header-text h1{
@@ -337,7 +337,8 @@ nav .fa-solid{
     font-size: 25px;
   }
   nav ul{
-    background-color: #ff004f;
+    background: rgb(0,0,0);
+    background: linear-gradient(301deg, rgba(0,0,0,1) 46%, rgba(255,0,79,0.9976365546218487) 100%);
     position: fixed;
     top: 0;
     right: -200px;
@@ -368,16 +369,37 @@ nav .fa-solid{
   }
   .about-col-2{
     font-size: 14px;
+    text-align: center;
+  }
+  .about-col-2 .sub-title{
+    margin-bottom: 30px;
+  }
+  .tab-titles{
+    justify-content: center;
   }
   .tab-links{
     font-size: 16px;
     margin-right: 20px;
+  }
+  .layer{
+     font-size: 12px;
+  }
+  .layer a{
+    margin: 10px;
+    font-size: 16px;
+    line-height: 40px;
+    background: white;
+    width: 40px;
+    height: 40px;
   }
   .contact-left, .contact-right{
     flex-basis: 100%;
   }
   .copyright{
     font-size: 14px;
+  }
+  .social-icons a{
+    font-size: 23px;
   }
 }
 #msg{
