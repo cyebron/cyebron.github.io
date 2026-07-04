@@ -1,279 +1,445 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cy|Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/1a0baad43d.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <!-- landing -->
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="images/logo.png" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>| Web App Developer</p>
-                <h1>Hi, I'm <span>Cy Anthony</span> <br>from Calbiga West. Samar</h1>
-            </div>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/CyAnthonyEbron" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://github.com/cyebron" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/cyril-anthony-ebron" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/cy.anthonio" target="_blank"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-    </div>
-    <!-- about -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/profile.png">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Hey there! I’m Cy Anthony, a web developer who’s passionate about 
-                        creating beautiful, user-friendly websites and applications. I love 
-                        turning ideas into digital experiences that are not only visually 
-                        appealing but also easy and enjoyable to use.
-                       <br> I’ve worked on a range of projects, from sleek, responsive websites 
-                       to more complex web applications, always with the user’s experience in
-                        mind. My goal is to make sure that every click feels natural and every 
-                        interaction makes sense.
-                       <br> When I’m not coding or tweaking designs, I’m probably exploring 
-                       new tech trends, learning new skills, or brainstorming ways to solve 
-                       problems more efficiently. I’m always excited to collaborate with others 
-                       and bring fresh ideas to life.
-                       <br> Feel free to reach out if you want to chat about web development, 
-                       design, or even just to say hi!</p>
-
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
-                            <p class="tab-links" onclick="openTab('experience')">Experience</p>
-                            <p class="tab-links" onclick="openTab('education')">Education</p>
-                        </div>
-                        <!-- skills content -->
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span>Web Development</span><br>Web application development</li>
-                                <li><span>Mobile App Development</span><br>Building android/iOS applications</li>
-                                <li><span>UI/UX Design</span><br>Design Web/App Interfaces</li>
-                                <li><span>IT Support and Tech Consulting</span><br>Consulting services designed to 
-                                    help businesses</li>
-                            </ul>
-                        </div>
-                        <!-- experience content -->
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                <li><span>2021 - Present</span><br> <strong>Web App Developer </strong> <br> at Southern Convergence Technologies Corporation</li>
-                                <li><span>2020 - 2021</span><br> <strong>IT Sevices Support Specialist </strong> <br> at Pinnacle Real Estate</li>
-                            </ul>
-                        </div>
-                        <!-- education content -->
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>2019</span><br>Samar State University</li>
-                                <li><span>2014</span><br>Calbiga National High School</li>
-                                <li><span>2010</span><br>Calbiga Central Elementary School</li>
-                            </ul>
-                        </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- services -->
-     <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fas fa-code"></i>
-                    <h2>Web Development</h2>
-                    <p>I specialize in creating custom web applications 
-                        that are fast, secure, and easy to use. 
-                        Whether you need a simple tool or a fully 
-                        scalable solution, I work closely with you 
-                        to build an app that fits your unique needs. 
-                        With a focus on seamless functionality and 
-                        user-friendly design, I deliver reliable web 
-                        applications that help you manage tasks, 
-                        collaborate, and grow your business effortlessly. 
-                        Let me help bring your ideas to life with 
-                        personalized, professional service.</p>
-                        <a href="https://www.google.com/search?q=what+is+web+development+as+a+service&rlz=1C1CHBF_enPH1051PH1051&oq=what+is+web+development+as+a+service&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yCAgCEAAYFhgeMgoIAxAAGA8YFhgeMg0IBBAAGIYDGIAEGIoFMg0IBRAAGIYDGIAEGIoFMg0IBhAAGIYDGIAEGIoFMgoIBxAAGIAEGKIEMgoICBAAGIAEGKIEMgoICRAAGIAEGKIE0gEHNjQ1ajBqOagCALACAQ&sourceid=chrome&ie=UTF-8" target="_blank">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-mobile-screen-button"></i>
-                    <h2>Mobile App Development</h2>
-                    <p>Mobile Application Development services designed to 
-                        help businesses create custom mobile applications that 
-                        meet their specific needs. I work closely with clients 
-                        to understand their goals and requirements, ensuring that 
-                        the applications are user-friendly, functional, and scalable. 
-                        My approach includes designing intuitive interfaces and developing 
-                        robust backend systems to provide seamless performance across 
-                        different devices.</p>
-                        <a href="https://www.google.com/search?q=what+is+mobile+app+development+as+a+service&rlz=1C1CHBF_enPH1051PH1051&oq=what+is+mobile+app++development+as+a+service&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIKCAEQABiABBiiBDIKCAIQABiABBiiBDIKCAMQABiABBiiBDIKCAQQABiABBiiBNIBCDg0MjlqMGo5qAIAsAIB&sourceid=chrome&ie=UTF-8" target="_blank">Learn more</a>
-                </div>
-                <div>
-                    <i class="fas fa-pen-nib"></i>
-                    <h2>UI/UX Design</h2>
-                    <p>I offer professional UI/UX design services that 
-                        focus on creating intuitive, visually appealing, 
-                        and user-friendly interfaces. By understanding 
-                        your business goals and your users' needs, I 
-                        design seamless digital experiences that are both 
-                        functional and beautiful. Whether you need a 
-                        fresh design or a complete revamp, I ensure every 
-                        element enhances usability and engages your 
-                        audience. Let me help you create designs that not 
-                        only look great but also provide a smooth, 
-                        enjoyable user experience.</p>
-                        <a href="https://www.google.com/search?q=what+is+ui%2Fux+as+a+service&sca_esv=ce985a1e0c81157c&rlz=1C1CHBF_enPH1051PH1051&ei=n3wUZ4eoHJDm2roPgf7q0Qo&ved=0ahUKEwjH8-DUhZyJAxUQs1YBHQG_OqoQ4dUDCA8&uact=5&oq=what+is+ui%2Fux+as+a+service&gs_lp=Egxnd3Mtd2l6LXNlcnAiGndoYXQgaXMgdWkvdXggYXMgYSBzZXJ2aWNlMggQIRigARjDBEjWNVDrGliRM3ABeAGQAQCYAYUBoAHiA6oBAzQuMbgBA8gBAPgBAZgCBqACgQTCAgoQABiwAxjWBBhHwgIEEAAYHsICCxAAGIAEGIYDGIoFwgIIEAAYgAQYogTCAgoQIRigARjDBBgKmAMAiAYBkAYIkgcDNC4yoAfcEw&sclient=gws-wiz-serp" target="_blank">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-headset"></i>
-                    <h2>IT Support and Tech Consulting</h2>
-                    <p>I offer IT Support and Tech Consulting services designed to 
-                        help businesses optimize their technology infrastructure. 
-                        My services include providing troubleshooting assistance 
-                        for hardware, software, and network issues, ensuring 
-                        smooth operations and minimizing downtime. I assist 
-                        organizations in integrating new technologies with their 
-                        existing systems to enhance workflow and efficiency.</p>
-                        <a href="https://www.google.com/search?q=what+is+IT+support+and+tech+consulting+as+a+service&rlz=1C1CHBF_enPH1051PH1051&oq=what+is+IT+support+and+tech+consulting+as+a+service&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRigATIHCAMQIRigAdIBBzgwNmowajmoAgCwAgE&sourceid=chrome&ie=UTF-8" target="_blank">Learn more</a>
-                </div>
-            </div>
-        </div>
-     </div>
-     <!-- portfolio -->
-      <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/work1.png">
-                    <div class="layer">
-                        <h3>School Fees Application System Technology (SFAST)</h3>
-                        <p>The SFAST is a tool for managing and tracking school-related fees, automating billing and payment processes.</p>
-                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work2.png">
-                    <div class="layer">
-                        <h3>Document Online Tracking System (DOTS)</h3>
-                        <p>The DOTS is a software platform designed to manage and monitor the flow of documents within an organization. </p>
-                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work3.png">
-                    <div class="layer">
-                        <h3>Quality Assurance Division Permit and Recognition Optimizer (QuADPRO)</h3>
-                        <p>The QuADPRO is a system designed to streamline the processing and tracking of permits and recognitions within an organization.</p>
-                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-            </div>
-            <!-- See more -->
-             <a href="#" class="btn"> See more</a>
-        </div>
-      </div>
-      <!-- contact -->
-       <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-envelope"></i> cyanthony.work@gmail.com</p>
-                    <p><i class="fas fa-phone-square-alt"></i> 0962 635 8365</p>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/CyAnthonyEbron" target="_blank"><i class="fab fa-facebook"></i></a>
-                        <a href="https://github.com/cyebron" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://linkedin.com/in/cyril-anthony-ebron" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/cy.anthonio" target="_blank"><i class="fab fa-instagram"></i></a>
-                    </div>
-                    <!-- <a href="/cv-file/portfolio.pdf" download class="btn btn2">Download CV</a> -->
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
-            </div>
-        </div>
-            <div class="copyright">
-                <p>Copyright Cy Anthony | Website Portfolio</p>
-            </div>
-       </div>
-
-
-<script>
-        var tabLinks = document.getElementsByClassName("tab-links");
-        var tabContents = document.getElementsByClassName("tab-contents");
-    
-        function openTab(tabname){
-            for (tabLink of tabLinks) {
-                tabLink.classList.remove("active-link") 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta
+    name="description"
+    content="Cyril Anthony Ebron is an IT Support Engineer and Software Developer specializing in cloud support, IT infrastructure, enterprise support, and business applications."
+>
+<meta name="theme-color" content="#0058be">
+<meta name="author" content="Cyril Anthony Ebron">
+<meta name="robots" content="index, follow">
+<title>Cyril Anthony Ebron | IT Support Engineer & Software Developer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Improve font loading performance -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Geist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary": "#924700",
+                    "inverse-surface": "#2e3038",
+                    "on-primary-container": "#fefcff",
+                    "on-secondary-container": "#596372",
+                    "surface-dim": "#d8d9e3",
+                    "on-tertiary-fixed": "#311400",
+                    "secondary": "#555f6d",
+                    "on-surface": "#191b23",
+                    "primary": "#0058be",
+                    "surface-container-high": "#e6e7f2",
+                    "tertiary-fixed-dim": "#ffb786",
+                    "tertiary-container": "#b75b00",
+                    "secondary-container": "#d6e0f1",
+                    "surface-container-low": "#f2f3fd",
+                    "on-tertiary": "#ffffff",
+                    "inverse-primary": "#adc6ff",
+                    "on-primary-fixed": "#001a42",
+                    "on-primary-fixed-variant": "#004395",
+                    "on-tertiary-container": "#fffbff",
+                    "primary-container": "#2170e4",
+                    "surface-variant": "#e1e2ec",
+                    "on-secondary-fixed-variant": "#3e4755",
+                    "on-surface-variant": "#424754",
+                    "surface": "#f9f9ff",
+                    "on-tertiary-fixed-variant": "#723600",
+                    "inverse-on-surface": "#eff0fa",
+                    "surface-container-highest": "#e1e2ec",
+                    "secondary-fixed-dim": "#bdc7d8",
+                    "surface-container": "#ecedf7",
+                    "primary-fixed": "#d8e2ff",
+                    "error-container": "#ffdad6",
+                    "surface-bright": "#f9f9ff",
+                    "on-secondary-fixed": "#121c28",
+                    "secondary-fixed": "#d9e3f4",
+                    "tertiary-fixed": "#ffdcc6",
+                    "surface-tint": "#005ac2",
+                    "on-error": "#ffffff",
+                    "primary-fixed-dim": "#adc6ff",
+                    "on-error-container": "#93000a",
+                    "on-background": "#191b23",
+                    "on-primary": "#ffffff",
+                    "outline": "#727785",
+                    "error": "#ba1a1a",
+                    "background": "#f9f9ff",
+                    "on-secondary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "outline-variant": "#c2c6d6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "xs": "0.5rem",
+                    "container-max": "1200px",
+                    "section-gap": "8rem",
+                    "md": "1.5rem",
+                    "base": "4px",
+                    "xl": "4rem",
+                    "lg": "2.5rem",
+                    "sm": "1rem"
+            },
+            "fontFamily": {
+                    "label-caps": ["Geist"],
+                    "body-lg": ["Inter"],
+                    "headline-lg": ["Geist"],
+                    "display": ["Geist"],
+                    "code": ["Geist"],
+                    "headline-lg-mobile": ["Geist"],
+                    "headline-md": ["Geist"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "display": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "code": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
             }
-            for (tabContent of tabContents) {
-                tabContent.classList.remove("active-tab") 
-            }
-            event.currentTarget.classList.add("active-link")
-            document.getElementById(tabname).classList.add("active-tab")
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #f9f9ff;
+            color: #191b23;
         }
-    
-</script>
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+        .scroll-mt-nav {
+            scroll-margin-top: 5rem;
+        }
+        
+    </style>
+</head>
+<body class="font-body-md text-body-md selection:bg-primary-fixed selection:text-on-primary-fixed" id="top">
+<!-- TopNavBar (Shared Component) -->
+<nav
+    class="fixed top-0 z-50 w-full bg-surface/80 shadow-sm glass-nav"
+    aria-label="Primary Navigation"
+>
+<div class="mx-auto flex h-16 max-w-[1200px] items-center justify-between px-lg">
+<a class="font-headline-md text-headline-md font-bold text-on-surface" href="#top">Cyril Anthony Ebron
+            </a>
+<!-- Desktop Links -->
+<div class="hidden md:flex items-center gap-lg font-body-md text-body-md">
+    <a class="text-on-surface-variant transition-colors duration-200 hover:text-primary" href="#about">About</a>
+    <a class="text-on-surface-variant transition-colors duration-200 hover:text-primary" href="#skills">Skills</a>
+    <a class="text-on-surface-variant transition-colors duration-200 hover:text-primary" href="#projects">Projects</a>
+    <a class="text-on-surface-variant transition-colors duration-200 hover:text-primary" href="#contact">Contact</a>
 
-<script>
-    var sidemenu = document.getElementById("sidemenu");
+    <a
+        href="https://calendly.com/cyanthonyebron/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="bg-primary text-on-primary px-md py-xs rounded-lg transition-colors duration-200 hover:bg-primary-container"
+    >
+        Hire Me
+    </a>
+</div>
+<!-- Mobile Menu Toggle -->
+<button
+    id="mobile-menu-btn"
+    type="button"
+    class="text-on-surface md:hidden"
+    aria-label="Open navigation menu"
+    aria-expanded="false"
+    aria-controls="mobile-menu"
+>
+    <span
+        class="material-symbols-outlined"
+        aria-hidden="true"
+    >
+        menu
+    </span>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header id="about" class="relative overflow-hidden pt-24 pb-24 md:pt-32 md:pb-40">
+<div class="relative z-10 mx-auto max-w-[1200px] px-lg">
+<div class="max-w-3xl">
+<span class="font-label-caps text-label-caps text-primary bg-primary-fixed/30 px-3 py-1 rounded-full mb-md inline-block">
+                    5+ YEARS OF DELIVERING IT SOLUTIONS
+                </span>
+<h1 class="font-display text-display mb-md leading-tight">
+                    IT Support Engineer & Software Developer <span class="text-primary">Building Reliable Technology Solutions</span>.
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-xl max-w-2xl">
+                    IT Support Engineer and Software Developer with 5+ years of experience delivering cloud support, IT infrastructure, enterprise technical support, and business applications that improve operational efficiency and reliability.
+                </p>
+<div class="flex flex-col sm:flex-row gap-md">
+<a
+    href="https://calendly.com/cyanthonyebron/"
+    class="bg-primary text-on-primary font-body-md px-lg py-md rounded-lg shadow-lg hover:shadow-xl hover:translate-y-[-2px] transition-all flex items-center justify-center gap-xs"
+>
+Book a Consultation
+<span class="material-symbols-outlined">arrow_forward</span>
+</a>
+<a
+    href="/cv-file/portfolio.pdf"
+    download="Cyril-Anthony-Ebron-Resume.pdf"
+    class="flex items-center justify-center gap-xs px-lg py-md rounded-lg border border-outline-variant font-body-md text-on-surface transition-colors duration-200 hover:bg-surface-container"
+>
+    Download Resume
+    <span class="material-symbols-outlined" aria-hidden="true">
+        download
+    </span>
+</a>
+</div>
+</div>
+</div>
+</header>
+<!-- Core Expertise Section -->
+<section id="skills" class="scroll-mt-nav bg-white py-section-gap">
+<div class="mx-auto max-w-[1200px] px-lg">
+<div class="text-center mb-xl">
+<h2 class="font-headline-lg text-headline-lg mb-sm">Core Expertise</h2>
+<p class="font-body-md text-on-surface-variant">Technical expertise focused on delivering reliable IT support, cloud solutions, infrastructure, and business applications.</p>
+</div>
+<div class="grid grid-cols-1 gap-md md:grid-cols-2 lg:grid-cols-4">
+<!-- Cloud Infrastructure -->
+<div class="p-lg bg-surface border border-outline-variant rounded-xl hover:shadow-lg transition-shadow duration-300 group">
+<div class="w-12 h-12 bg-primary-fixed rounded-lg flex items-center justify-center mb-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary" aria-hidden="true">cloud</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-xs">Cloud & Technical Support</h3>
+<p class="text-on-surface-variant font-body-md">Resolve cloud and technical issues efficiently to minimize downtime, restore productivity, and keep business operations running smoothly.</p>
+</div>
+<!-- Cybersecurity -->
+<div class="p-lg bg-surface border border-outline-variant rounded-xl hover:shadow-lg transition-shadow duration-300 group">
+<div class="w-12 h-12 bg-primary-fixed rounded-lg flex items-center justify-center mb-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary" aria-hidden="true">security</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-xs">IT Infrastructure</h3>
+<p class="text-on-surface-variant font-body-md">Build and maintain secure, scalable, and highly available IT systems that ensure operational continuity and business resilience.</p>
+</div>
+<!-- DevOps -->
+<div class="p-lg bg-surface border border-outline-variant rounded-xl hover:shadow-lg transition-shadow duration-300 group">
+<div class="w-12 h-12 bg-primary-fixed rounded-lg flex items-center justify-center mb-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary" aria-hidden="true">terminal</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-xs">Software Development</h3>
+<p class="text-on-surface-variant font-body-md">Design and develop modern web applications, business systems, and workflow automation using industry-standard technologies and best practices.</p>
+</div>
+<!-- Enterprise Support -->
+<div class="p-lg bg-surface border border-outline-variant rounded-xl hover:shadow-lg transition-shadow duration-300 group">
+<div class="w-12 h-12 bg-primary-fixed rounded-lg flex items-center justify-center mb-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary" aria-hidden="true">hub</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-xs">Enterprise Solutions</h3>
+<p class="text-on-surface-variant font-body-md">Provide advanced technical support, assist with system migrations, and collaborate across teams to keep business-critical systems running smoothly.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Selected Work (Gallery) -->
+<section class="py-section-gap scroll-mt-nav bg-surface transition-all duration-700 opacity-100" id="projects">
+<div class="max-w-[1200px] mx-auto px-lg">
+<div class="flex flex-col md:flex-row justify-between items-end mb-xl gap-md">
+<div>
+<h2 class="font-headline-lg text-headline-lg mb-sm">Selected Work</h2>
+<p class="font-body-md text-on-surface-variant">Featured projects that improved operational efficiency through automation and workflow optimization.</p>
+</div>
+<a class="font-body-md text-primary flex items-center gap-xs hover:underline" href="#">
+                    View All Project<span class="material-symbols-outlined">north_east</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-lg">
+<!-- Project 1 -->
+<div class="group relative bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 project-card">
+<div class="aspect-video relative overflow-hidden">
+<div class="absolute inset-0 bg-primary/10 project-overlay opacity-0 transition-opacity duration-500 z-10 flex items-center justify-center">
+<a
+    href="./projects/sfast/index.html"
+    class="bg-white text-primary px-lg py-md rounded-full font-label-caps shadow-md transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500"
+>
+    VIEW PROJECT
+</a>
+</div>
+<img
+    src="./assets/images/projects/sfast.jpg"
+    alt="School Fees Application System Technology dashboard preview"
+    loading="lazy"
+    decoding="async"
+    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+>
+</div>
+<div class="p-lg">
+<div class="mb-md flex flex-wrap gap-xs">
+<span class="font-label-caps text-on-surface-variant bg-surface-container px-2 py-1 rounded">Vue.js</span>
+<span class="font-label-caps text-on-surface-variant bg-surface-container px-2 py-1 rounded">MySQL</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-xs">School Fees Application System Technology (SFAST)</h3>
+<p class="text-on-surface-variant font-body-md">Automated the school fee application process through a centralized web platform, increasing operational efficiency by <strong>50%</strong> while reducing manual work and improving workflow transparency.</p>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="group relative bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 project-card">
+<div class="aspect-video relative overflow-hidden">
+<div class="project-overlay absolute inset-0 z-10 flex items-center justify-center bg-primary/10 opacity-0 transition-opacity duration-500">
+<a
+    href="./projects/pdots/index.html"
+    class="bg-white text-primary px-lg py-md rounded-full font-label-caps shadow-md transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500"
+>
+    VIEW PROJECT
+</a>
+</div>
+<img
+    src="./assets/images/projects/pdots.jpg"
+    alt="Prime Document Online Tracking System preview"
+    loading="lazy"
+    decoding="async"
+    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+>
+</div>
+<div class="p-lg">
+<div class="mb-md flex flex-wrap gap-xs">
+<span class="font-label-caps text-on-surface-variant bg-surface-container px-2 py-1 rounded">REST API</span>
+<span class="font-label-caps text-on-surface-variant bg-surface-container px-2 py-1 rounded">Node.js</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-xs">Prime Document Online Tracking System (PDOTS)</h3>
+<p class="text-on-surface-variant font-body-md">Modernized document management by reducing retrieval and processing time by <strong>70%</strong> through real-time tracking and workflow automation.
+</p>
 
-    function openMenu() {
-        sidemenu.style.right = "0";
-    }
-    function closeMenu() {
-        sidemenu.style.right = "-200px";
-    }
-</script>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust / Certifications Section -->
+<section class="border-y border-outline-variant bg-white py-section-gap">
+<div class="max-w-[1200px] mx-auto px-lg">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-xl items-center">
+<div>
+<h2 class="font-headline-lg text-headline-lg mb-md">
+    Certifications & Training
+</h2>
+<p class="font-body-lg text-on-surface-variant mb-lg">
+                        Industry-recognized certifications that strengthen my expertise in IT support, cybersecurity, software development, and modern workplace technologies.
+                    </p>
+<div class="flex flex-wrap gap-md">
+<div class="flex items-center gap-xs px-md py-xs bg-surface-container border border-outline-variant rounded-lg">
+<span class="material-symbols-outlined text-primary" aria-hidden="true">verified</span>
+<span class="font-body-md font-medium">Cyber Security Awareness Training</span>
+</div>
+<div class="flex items-center gap-xs px-md py-xs bg-surface-container border border-outline-variant rounded-lg">
+<span class="material-symbols-outlined text-primary" aria-hidden="true">verified</span>
+<span class="font-body-md font-medium">Modern JavaScript Complete+</span>
+</div>
+<div class="flex items-center gap-xs px-md py-xs bg-surface-container border border-outline-variant rounded-lg">
+<span class="material-symbols-outlined text-primary" aria-hidden="true">verified</span>
+<span class="font-body-md font-medium">Computer System Servicing NC II</span>
+</div>
+<div class="flex items-center gap-xs px-md py-xs bg-surface-container border border-outline-variant rounded-lg">
+<span class="material-symbols-outlined text-primary" aria-hidden="true">verified</span>
+<span class="font-body-md font-medium">Complete Virtual Assistant Training</span>
+</div>
+</div>
+</div>
+<div class="bg-surface p-xl rounded-2xl relative overflow-hidden">
+<div class="absolute top-0 right-0 p-lg opacity-10">
+<span class="material-symbols-outlined text-[80px]" aria-hidden="true">format_quote</span>
+</div>
+<p class="font-body-lg text-on-surface italic mb-lg relative z-10">"I believe great IT support is more than solving technical issues, it's about restoring productivity, reducing downtime, and making technology reliable for the people who depend on it. I continuously improve my skills through hands-on experience, certifications, and building solutions that create measurable business value.."</p>
+<div class="flex items-center gap-md">
+<!-- <div class="w-12 h-12 rounded-full bg-primary-fixed overflow-hidden">
+<img class="w-full h-full object-cover" alt="A professional portrait of a senior tech executive preview." src="https://lh3.googleusercontent.com/aida-public/AB6AXuArRlsn7g8GZQjJR4qjqsCO-xf-JZKNf2yE6U1A3MQvKoMb4S8-N-ymREnP0XAVp8RKzb5sRaQia3i6NFy_z9mnsi1NyV4m2Bk4ZmqU9DlhdK13fzVIULoP_arfWQqFXm5eKJeyrvQbIs6CwOJ1E6jq3kie3_gVg-E58TMSo40U8jbtwVm7r7-HeEwvqYIPYyKQcNx5Yu1Wl7ojUNzzyCUmg-a0fgn4yIpw-SyaEh_0panXJ27MxssZnhQNyJY91p2cJWIx9h29EFk" loading="lazy"
+decoding="async">
+</div> -->
+<!-- <div>
+<p class="font-body-md font-bold"><span data-sheets-root="1" style="color: rgb(0, 0, 0); font-weight: 400; font-size: 10pt; font-family: Arial; text-align: center;" class="">JESSICA MOUNTS</span></p>
+<p class="font-label-caps text-on-surface-variant">E-commerce Business Owner</p>
+</div> -->
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-section-gap scroll-mt-nav" id="contact">
+<div class="max-w-[800px] mx-auto px-lg">
+<div class="text-center mb-xl">
+<h2 class="font-headline-lg text-headline-lg mb-sm">Let's Connect</h2>
+<p class="font-body-md text-on-surface-variant">I'm always open to career opportunities, freelance projects, collaborations, and meaningful conversations. If you're looking for someone who enjoys solving technical challenges, I'd be happy to connect.</p>
+</div>
+<!-- Start Form -->
+<form class="bg-white p-lg md:p-xl rounded-2xl shadow-sm border border-outline-variant space-y-md" name="submit-to-google-sheet">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<div class="space-y-xs">
+<label class="font-label-caps text-on-surface-variant">NAME</label>
+<input class="w-full bg-surface border border-outline-variant rounded-lg p-md focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" type="text" placeholder="Your Name" name="name" required>
+</div>
+<div class="space-y-xs">
+<label class="font-label-caps text-on-surface-variant">EMAIL</label>
+<input class="w-full bg-surface border border-outline-variant rounded-lg p-md focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" type="email" placeholder="Your Email" name="email" required>
+</div>
+</div>
+<div class="space-y-xs">
+<label class="font-label-caps text-on-surface-variant">SUBJECT</label>
+<select class="w-full bg-surface border border-outline-variant rounded-lg p-md focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" name="subject">
+<option>Career Opportunity</option>
+<option>Project Inquiry</option>
+<option>Technical Consultation</option>
+<option>Freelance Opportunity</option>
+<option>General Message</option>
+</select>
+</div>
+<div class="space-y-xs">
+<label class="font-label-caps text-on-surface-variant">MESSAGE</label>
+<textarea class="w-full bg-surface border border-outline-variant rounded-lg p-md focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" placeholder="How can I help your organization?" rows="4" name="message"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary font-headline-md py-md rounded-lg shadow-lg hover:bg-primary-container transition-all flex items-center justify-center gap-xs" type="submit">
+                    Send Message
+                    <span class="material-symbols-outlined">send</span>
+</button>
+</form>
+<p
+    id="msg"
+    class="mt-md text-center font-body-md"
+    aria-live="polite"
+></p>
+<!-- End Form -->
+</div>
+</section>
 
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxKCLZn827cEX5U7tToweWbj9tAP3B8B4_3SKUV-vzEQDLjEVY0r-sFjMZJVKVSm9o3/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            }, 5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-
-</body>
-
-
-</html>
+<!-- Footer (Shared Component) -->
+<footer class="bg-surface py-xl border-t border-outline-variant">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-[1200px] mx-auto px-lg gap-md">
+<div>
+<a href="#about" class="mb-xs block font-headline-md text-headline-md font-bold text-primary">
+    Cyril Anthony Ebron
+</a>
+<p class="font-body-md text-on-surface-variant">© <span id="current-year"></span> Cyril Anthony Ebron. All Rights Reserved.</p>
+</div>
+<div class="flex gap-lg">
+<a class="font-body-md text-on-secondary-container hover:text-primary transition-colors duration-200" href="https://linkedin.com/in/cyril-anthony-ebron" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+<a class="font-body-md text-on-secondary-container hover:text-primary transition-colors duration-200" href="https://github.com/cyebron" target="_blank" rel="noopener noreferrer">GitHub</a>
+<a class="font-body-md text-on-secondary-container hover:text-primary transition-colors duration-200" href="https://www.facebook.com/CyAnthonyEbron" target="_blank" rel="noopener noreferrer">Facebook</a>
+<a class="font-body-md text-on-secondary-container hover:text-primary transition-colors duration-200" href="/cv-file/portfolio.pdf" download >Download Resume</a>
+</div>
+</div>
+</footer>
+<script src="./assets/js/main.js" defer></script>
+</body></html>
